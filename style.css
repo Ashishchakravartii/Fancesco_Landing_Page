@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vmax;
+    font-family: "Roboto Thin";
+    color: rgb(205, 200, 200);
+
+}
+.nav-part2{
+    display: flex;
+   gap: 3vmax;    
+}
+
+.main h1{
+    color: white;
+    font-size: 9vmax;
+    font-family: "Roboto Light";
+    position: relative;
+    z-index: 5;
+
+}
+.main h1:nth-child(2){
+    margin-top: 3vmax;
+    margin-left: 10vmax;
+    position: absolute;
+    top: 28%;
+
+}
+.main h1:nth-child(3){
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    color: rgb(234, 112, 112);
+
+   
+}
+.main h1:nth-child(4){
+    margin-left: 40vmax;
+    position: absolute;
+    top:65.5%;
+    left: 1%;
+}
+.main img{
+    width: 18vw;
+    height: 56vh;
+    position: absolute;
+    object-fit: cover;
+    top: 28%;
+    left: 42%;
+}
+
+.main img:nth-child(5){
+    rotate: 10deg;
+    margin-bottom: 2vmax;
+}
+.main img:nth-child(6){
+    rotate: 30deg;
+    margin-bottom: 4vmax;
+
+}
+
+.bottom{
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vmax;
+    font-family: "Roboto Light";
+    color: rgb(205, 200, 200);
+    font-size: 1vmax;
+    font-weight: 100;
+}
