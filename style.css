@@ -7,7 +7,7 @@ html,
 body{
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .main{
@@ -17,6 +17,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 .nav{
     width: 100vw;
@@ -27,6 +28,8 @@ body{
     padding: 0 4vmax;
     font-family: "Roboto Thin";
     color: rgb(205, 200, 200);
+    position: fixed;
+    top: 0;
 
 }
 .nav-part2{
@@ -93,4 +96,51 @@ body{
     color: rgb(205, 200, 200);
     font-size: 1vmax;
     font-weight: 100;
+    position: absolute;
+    bottom: 0;
+}
+
+/* --------------------------------Page 2 Starting------------------------------------- */
+
+.page2{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2vmax;
+    position: relative;
+}
+
+.page2 div{
+    width: 22%;
+    height: 57%;
+    margin-top: 5vmax;
+    text-align: center;
+}
+.page2 div>img{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+.page2 div>h5{
+    margin-top: 1vmax;
+    font-family: "Roboto light";
+    color: white;
+}
+.p2-bottom{
+    width: 100vw;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid rgb(146, 141, 141);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 4vmax;
+}
+.p2-bottom h1{
+    font-size: 7vmax;
+    font-family: "Roboto light";
 }
